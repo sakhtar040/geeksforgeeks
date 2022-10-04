@@ -29,7 +29,7 @@ const arr = [-1, 2, -3, 4, 5, 6, -7, 8, 9];
 console.log(reArragnePosNeg(arr, arr.length))
 
 //Solution 2
-const reArragnePosNeg = (arr, n) => {
+const reArragnePosNeg1 = (arr, n) => {
     arr.sort();
 	//applying quick sort pivot strategy
 	let i=1, j=1;
@@ -51,5 +51,5 @@ const reArragnePosNeg = (arr, n) => {
 	return arr;
 }
 												 
-const arr = [-1, 2, -3, 4, 5, 6, -7, 8, 9];
-console.log(reArragnePosNeg(arr, arr.length))
+const arr1 = [-1, 2, -3, 4, 5, 6, -7, 8, 9];
+console.log(reArragnePosNeg1(arr1, arr1.length))

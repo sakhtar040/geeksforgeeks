@@ -11,9 +11,9 @@ const rotateArray = (arr) => {
 console.log(rotateArray(array))
 
 //Solution 2
-const array = [1,2,3,4,5,6]
+//const array = [1,2,3,4,5,6]
 
-const rotateArray = (arr, n) => {
+const rotateArray1 = (arr, n) => {
     let i=0;
 	let j=n-1;
 	while(i!=j) {
@@ -25,4 +25,4 @@ const rotateArray = (arr, n) => {
 	return arr
 }
 
-console.log(rotateArray(array, 6))
+console.log(rotateArray1(array, 6))

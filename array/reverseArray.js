@@ -52,6 +52,10 @@ const rotateArray = (arr, d, n) => {
 	arr = leftRotate(arr, 0, d-1);
 	arr = leftRotate(arr, d, n-1);
 	arr = leftRotate(arr, 0, n-1);
+
+	/*arr = leftRotate(arr, 0, n-1);
+	arr = leftRotate(arr, 0, d-1);
+	arr = leftRotate(arr, d, n-1);*/ //right rotate
 	return arr;
 }
 
