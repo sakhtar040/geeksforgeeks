@@ -12,19 +12,18 @@ class BinaryTree{
         this.diameter = Number.MIN_VALUE
     }
 
-    getHeight(rootNode) {
-        if(rootNode === null) {
-            return 0
-        } else {
-            let lHeight = this.getHeight(rootNode.left)
-            let rHeight = this.getHeight(rootNode.right)
-            this.diameter = Math.max(this.diameter, 1 + lHeight + rHeight)
-            return Math.max(lHeight, rHeight) + 1
-        }
-    }
-
     getDiameter() {
-        this.getHeight(this.root)
+        const getHeight = (rootNode) => {
+            if(rootNode === null) {
+                return 0
+            } else {
+                let lHeight = getHeight(rootNode.left)
+                let rHeight = getHeight(rootNode.right)
+                this.diameter = Math.max(this.diameter, 1 + lHeight + rHeight)
+                return Math.max(lHeight, rHeight) + 1
+            }
+        }
+        getHeight(this.root)
         return this.diameter
     }
 }

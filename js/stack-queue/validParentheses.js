@@ -5,7 +5,6 @@ class ValidParentheses {
 
     isValid(inputString) {
         let stack = [-1]
-        //let stack2 = []
         let output = 0
         for(let i=0; i<inputString.length; i++) {
             let str = inputString[i]
